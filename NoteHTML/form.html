@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Action: Where the form sends data
+        Method: GET (default) or POST
+
+Both methods transfer data from the client
+to the server in the HTTP protocol.
+However, GET carries a request parameter
+added in the URL string making it a security
+risk because the data is exposed in the
+URL bar. POST is secure because it’s not
+rendered in the URL bar. -->
+
+
+
+     <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <input type="submit" value="send">
+<br>
+        <label for="coke"> Coke</label>
+        <input type="radio"name="soda"id="Coke"value="Coke">
+        <label for="Pepsi"> Pepsi</label>
+        <input type="radio"name="soda"id="pepsi"value="pepsi">
+<br>
+        <label for="pepsi"> Pepsi</label>
+        <input type="checkbox" name="drink" id="pepsi" value="pepsi">
+<br>
+<label for="coke">coke</label>
+<input type="checkbox" name="drink" id="coke" value="coke">
+<br>
+<label for="DR.peper"> DR.peper</label>
+<input type="checkbox" name="drink" id="DR.peper" value="DR.peper">
+     </form>
+     <!-- GET
+•Data visible in URL
+•Data size restrictions
+•Only for requesting data
+POST
+•Data not visible in URL
+•No data size restrictions
+•Used for modifying/adding data -->
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+       <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" >
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"  > -->
+
+      <!-- <div>
+        <label for="coke">Coke</label>
+        <input type="radio" name="soda" id="coke" value="coke" />
+
+        <label for="pepsi">Pepsi</label>
+        <input type="radio" name="soda" id="pepsi" value="pepsi" />
+      </div>
+
+      <label for="pepsi">Pepsi</label>
+      <input type="checkbox" name="drink" id="pepsi" value="pepsi" />
+
+      <label for="sprite">Sprite</label>
+      <input type="checkbox" name="drink" id="sprite" value="sprite" />
+
+      <label for="coke">Coke</label>
+      <input type="checkbox" name="drink" id="coke" value="coke" />
+
+      <label for="drpepper">Dr. Pepper</label>
+      <input type="checkbox" name="drink" id="drpepper" value="dr-pepper" />
+
+      <select name="state">
+        <option value="AK">Alaska</option>
+        <option value="AL">Alabama</option>
+        <option value="AR">Arkansas</option>
+        <option value="AZ">Arizona</option>
+        <option value="TX">Texas</option>
+      </select>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+
+      <button id="show-password">Show password</button>
+
+      <input type="submit" value="SEND" />
+    </form>
+    <script>
+      const button = document.querySelector("#show-password");
+
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const passwordInput = document.querySelector("#password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      });
+    </script>
+  </body>
+</html>  -->
